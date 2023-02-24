@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // listeners
   start_btn.addEventListener("click", resetGame);
   start_btn.addEventListener("mouseover", startGame);
-
   // functions
   function startGame() {
     document.getElementById("status").innerText = "Game Started.\n" + increment;
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   play_with_div.style.fontSize = "15px";
   play_with_div.addEventListener("click", startGameB);
   initial_position = start_btn.getBoundingClientRect();
-
   function back_to_initial() {
     start_btn.style.position = "absolute";
     start_btn.style.right = initial_position.right;
